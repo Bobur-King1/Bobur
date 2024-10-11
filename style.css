@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: absolute;
+    top: 20px;
+    left: 200px;
+    width: 1200px;
+    height: 120px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.item{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box1{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+} 
+.box2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.menu{
+    display: none;
+}
+
+.close{
+    display: none;
+}
+
+.box3{
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box4{
+    display: flex;
+    gap: 30px;
+}
+.box4 p{
+    margin-top: 5px;
+}
+
+.box4 img{
+    margin-top: 10px;
+}
+.box5 h4{
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box6{
+   display: flex;
+   gap: 30px;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+}
+.box7{
+    margin-top: 750px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.box7 h1{
+    color: chocolate;
+}
+
+.box7 p{
+    font-size: 18px;
+}
+.box8{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 90px;
+}
+.box9,.box10,.box11{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.box9 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+    font-size: 18px;
+}
+.box10 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+    font-size: 18px;
+}
+.box11 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+    font-size: 18px;
+}
+.box12{
+    margin-top: 1300px;
+    margin-left: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.box12 a{
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1375px;
+    left: 1200px;
+}
+.box13{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.box13 h1{
+    color: purple;
+}
+.box13 p{
+    font-size: 38px;
+}
+.link-container {
+    position: fixed;
+    top: 10px; /* Sahifaning yuqori qismidan 10px joylashadi */
+    right:  10px; /* Chap tomondan joylashish */
+    z-index: 1000; /* Tugmalar boshqa elementlar ustida ko'rinadi */
+    display: flex;
+    gap: 20px;
+  }
+
+  .box14{
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1460px;
+    left: 200px;
+  }
+
+  .link-container a {
+    display: block;
+    margin-bottom: 10px; /* Tugmalar orasida bo'sh joy */
+    padding: 10px 20px;
+    background-color: #007bff; /* Tugma rangi */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .boxes  {
+    display: block;
+    margin-bottom: 10px; /* Tugmalar orasida bo'sh joy */
+    padding: 10px 20px;
+    background-color: #007bff; /* Tugma rangi */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+
+.boxes:hover {
+    background-color: #0056b3; /* Tugmaga kursor kelganda rang o'zgarishi */
+  }
+
+  .box15{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: black;
+  }
+  .box16{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: red;
+    position: absolute;
+    top: 305px;
+    width: 456px;
+    height: 120px;
+    z-index: -1;
+  }
+  .box16 p{
+    color: blue;
+    font-size: 14px;
+  }
+  .box16 h1{
+    color: black;
+  }
+  .box17{
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+  .box18{
+    color: black;
+    display: flex;
+    gap: 5px;
+  }
+@media (max-width:600px){
+    .container{
+        width: 400px;
+        height: 30px;
+    }
+
+    .menu{
+        display: block;
+    }
+    
+    .item {
+        width: 700px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+
+        transition: 0.8s;
+
+    }
+}
